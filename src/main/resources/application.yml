@@ -1,0 +1,16 @@
+spring: 
+  application: 
+    name: rabbit-amqp-springboot-consumer
+  rabbitmq: 
+    host: 47.92.209.37
+    port: 5672
+    username: rabbitadmin
+    password: 123456
+    virtual-host: /
+    listener: 
+      simple: 
+        acknowledge-mode: manual
+        concurrency: 1
+        max-concurrency: 5
+server: 
+  port: 8082
